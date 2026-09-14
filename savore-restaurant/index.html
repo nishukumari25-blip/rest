@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Savoré Restaurant - fine dining, good food, good mood.">
+  <title>Savoré | A Finer Dining Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Savoré home">
+        <span class="brand-mark">S</span>
+        <span class="brand-name">Savoré<small>RESTAURANT & GRILL</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#reservation">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow light">GOOD FOOD. GOOD MOOD.</p>
+        <h1>A Finer Dining<br><em>Experience</em></h1>
+        <p class="hero-copy">Where every bite tells a story. Crafted with passion, served with warmth, just for you.</p>
+        <div class="button-row">
+          <a class="button button-gold" href="#menu">View Our Menu <span>→</span></a>
+          <a class="button button-outline" href="#reservation">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="hero-note"><span>Good<br>Food<br>Good<br>Company</span></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">OUR STORY</p>
+          <h2>Food Brings<br>People Together</h2>
+          <p>At Savoré, we believe great food creates great connections. Our craft is rooted in rich, fresh ingredients, cooked with passion by both tradition and innovation.</p>
+          <div class="features">
+            <div><span class="feature-icon">◌</span><strong>Fresh<br>Ingredients</strong></div>
+            <div><span class="feature-icon">♨</span><strong>Expert<br>Chefs</strong></div>
+            <div><span class="feature-icon">♡</span><strong>Memorable<br>Experiences</strong></div>
+          </div>
+          <a class="button button-gold" href="#contact">Learn More About Us <span>→</span></a>
+        </div>
+        <div class="about-visual" id="gallery">
+          <img class="about-main-img" src="images/about/restaurant-interior.jpg" alt="Warmly lit Savoré dining room">
+          <div class="quote-card">“Good<br>Food,<br>Brighter<br>Days”</div>
+          <img class="about-small-img" src="images/about/pasta-dish.jpg" alt="Close-up of a premium pasta dish">
+          <p class="script-note">Share<br>the little<br>things</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR MENU</p>
+          <h2>A Taste for Every Mood</h2>
+          <p>From comforting classics to modern favorites, our menu is crafted to delight every palate.</p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Menu categories">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="starters" role="tab" aria-selected="false">Starters</button>
+          <button class="filter" data-filter="mains" role="tab" aria-selected="false">Main Course</button>
+          <button class="filter" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+          <button class="filter" data-filter="beverages" role="tab" aria-selected="false">Beverages</button>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card" data-category="starters"><div class="card-image"><img src="images/menu/bruschetta.jpg" alt="Classic bruschetta"><span class="card-tag">STARTER</span></div><div class="card-body"><h3>Classic Bruschetta</h3><p>Toasted bread with fresh tomatoes, basil and olive oil.</p><div class="card-bottom"><strong>₹320</strong><button class="add-button" aria-label="Add Classic Bruschetta">+</button></div></div></article>
+          <article class="menu-card" data-category="mains"><div class="card-image"><img src="images/menu/alfredo-pasta.jpg" alt="Creamy Alfredo pasta"><span class="card-tag">MAIN COURSE</span></div><div class="card-body"><h3>Creamy Alfredo Pasta</h3><p>Rich and creamy pasta with parmesan and herbs.</p><div class="card-bottom"><strong>₹450</strong><button class="add-button" aria-label="Add Creamy Alfredo Pasta">+</button></div></div></article>
+          <article class="menu-card" data-category="mains"><div class="card-image"><img src="images/menu/grilled-salmon.jpg" alt="Grilled salmon dish"><span class="card-tag">MAIN COURSE</span></div><div class="card-body"><h3>Grilled Salmon</h3><p>Perfectly grilled salmon with seasonal vegetables.</p><div class="card-bottom"><strong>₹620</strong><button class="add-button" aria-label="Add Grilled Salmon">+</button></div></div></article>
+          <article class="menu-card" data-category="desserts"><div class="card-image"><img src="images/menu/lava-cake.jpg" alt="Chocolate lava cake"><span class="card-tag">DESSERT</span></div><div class="card-body"><h3>Chocolate Lava Cake</h3><p>Warm chocolate cake with a molten center, served with vanilla ice cream.</p><div class="card-bottom"><strong>₹380</strong><button class="add-button" aria-label="Add Chocolate Lava Cake">+</button></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <div class="reservation-image"></div><div class="reservation-shade"></div>
+      <div class="container reservation-grid">
+        <div class="reservation-copy"><p class="eyebrow light">RESERVATION</p><h2>Book Your Table<br>Today</h2><p>Great food is always better when shared. Reserve your table and join us for an unforgettable dining experience.</p></div>
+        <form class="booking-form" id="booking-form" novalidate>
+          <div class="form-grid"><label>Full Name<input type="text" name="name" placeholder="Enter your name" required></label><label>Email Address<input type="email" name="email" placeholder="Enter your email" required></label><label>Date<input type="date" name="date" required></label><label>Time<input type="time" name="time" required></label><label class="full-field">Number of Guests<select name="guests" required><option value="">Select guests</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option></select></label></div>
+          <button class="form-submit" type="submit">Reserve a Table</button><p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">S</span><span class="brand-name">Savoré<small>RESTAURANT & GRILL</small></span></a></div>
+      <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+      <div><h4>Contact Us</h4><p>123 Foodie Lane,<br>Flavor Street, Delhi</p><p>+91 98765 43210<br>hello@savore.com</p></div>
+      <div><h4>Follow Us</h4><div class="socials"><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Twitter">♥</a><a href="#contact" aria-label="YouTube">▶</a></div><p class="footer-note">Good<br>Food<br>Happy<br>People</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2024 Savoré. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms &amp; Conditions</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
