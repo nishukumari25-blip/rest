@@ -39,7 +39,7 @@ a {
 }
 
 .container {
-    width: min(1120px, calc(100% - 96px));
+    width: min(1140px, calc(100% - 80px));
     margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@ a {
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 31px;
+    gap: 28px;
     font-size: 10px;
     color: #77736d;
 }
@@ -139,8 +139,8 @@ a {
 /* ================= HERO ================= */
 
 .hero {
-    height: 410px;
-    background: url('images/hero/hero-dining.jpg') center 57% / cover;
+    height: 470px;
+    background: url('images/hero/hero-dining.jpg') center 58% / cover;
     position: relative;
     color: #fff;
     overflow: hidden;
@@ -149,12 +149,12 @@ a {
 .hero-shade {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(10, 9, 7, 0.82), rgba(10, 9, 7, 0.18) 74%), linear-gradient(0deg, rgba(10, 9, 7, 0.5), transparent 56%);
+    background: linear-gradient(90deg, rgba(10, 9, 7, 0.88), rgba(10, 9, 7, 0.28) 68%, rgba(10, 9, 7, 0.08)), linear-gradient(0deg, rgba(10, 9, 7, 0.58), transparent 58%);
 }
 
 .hero-content {
     position: relative;
-    padding-top: 91px;
+    padding-top: 112px;
 }
 
 .eyebrow {
@@ -221,18 +221,18 @@ a {
 
 .hero-note {
     position: absolute;
-    right: 11%;
-    top: 105px;
+    right: 12%;
+    top: 126px;
     color: #f4e9d9;
-    font: italic 18px/16px var(--serif);
-    transform: rotate(-10deg);
+    font: italic 22px/18px var(--serif);
+    transform: rotate(-9deg);
     opacity: 0.9;
 }
 
 /* ================= COMMON SECTION ================= */
 
 .section {
-    padding: 62px 0;
+    padding: 70px 0;
 }
 
 /* ================= ABOUT ================= */
@@ -244,7 +244,7 @@ a {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
-    gap: 62px;
+    gap: 72px;
     align-items: center;
 }
 
@@ -290,14 +290,14 @@ a {
 }
 
 .about-visual {
-    height: 270px;
+    height: 286px;
     position: relative;
     padding-left: 72px;
 }
 
 .about-main-img {
     width: 76%;
-    height: 226px;
+    height: 238px;
     object-fit: cover;
 }
 
@@ -306,7 +306,7 @@ a {
     width: 150px;
     height: 106px;
     right: 9px;
-    bottom: 0;
+    bottom: 2px;
     object-fit: cover;
     border: 5px solid var(--paper);
 }
@@ -333,16 +333,17 @@ a {
 
 .script-note {
     position: absolute;
-    right: -1px;
-    bottom: 25px;
+    right: 0;
+    bottom: 22px;
+    max-width: 80px;
 }
 
 /* ================= MENU ================= */
 
 .menu-section {
     background: #f7f5f0;
-    padding-top: 56px;
-    padding-bottom: 62px;
+    padding-top: 62px;
+    padding-bottom: 70px;
 }
 
 .section-heading {
@@ -391,7 +392,8 @@ a {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 16px;
+    align-items: stretch;
 }
 
 .menu-card {
@@ -410,7 +412,7 @@ a {
 }
 
 .card-image {
-    height: 125px;
+    height: 142px;
     position: relative;
     overflow: hidden;
 }
@@ -450,7 +452,7 @@ a {
 }
 
 .card-body p {
-    height: 30px;
+    min-height: 30px;
     font-size: 9px;
     line-height: 1.5;
     color: var(--muted);
@@ -488,7 +490,7 @@ a {
 /* ================= RESERVATION ================= */
 
 .reservation {
-    height: 300px;
+    min-height: 348px;
     position: relative;
     color: #fff;
     overflow: hidden;
@@ -497,13 +499,13 @@ a {
 .reservation-image {
     position: absolute;
     inset: 0;
-    background: url('images/reservation/reservation-bg.jpg') center 55% / cover;
+    background: url('images/reservation/reservation-bg.jpg') center 58% / cover;
 }
 
 .reservation-shade {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(16, 14, 11, 0.88), rgba(16, 14, 11, 0.7));
+    background: linear-gradient(90deg, rgba(12, 10, 8, 0.92), rgba(12, 10, 8, 0.76) 62%, rgba(12, 10, 8, 0.62));
 }
 
 .reservation-grid {
@@ -536,7 +538,7 @@ a {
 .booking-form {
     background: #fbfaf7;
     color: var(--ink);
-    padding: 15px 17px;
+    padding: 18px 20px;
     border-radius: 3px;
     box-shadow: 0 10px 25px #0004;
 }
@@ -618,7 +620,7 @@ a {
     display: grid;
     grid-template-columns: 1.2fr 0.7fr 1fr 0.85fr;
     gap: 45px;
-    padding: 30px 0 25px;
+    padding: 38px 0 30px;
 }
 
 .footer-main h4 {
@@ -698,11 +700,12 @@ a {
     }
 
     .hero {
-        height: 520px;
+        height: 540px;
+        background-position: 62% center;
     }
 
     .hero-content {
-        padding-top: 125px;
+        padding-top: 142px;
     }
 
     .hero h1 {
@@ -711,7 +714,7 @@ a {
 
     .hero-note {
         right: 8%;
-        top: 155px;
+        top: 178px;
     }
 
     .about-grid {
@@ -751,6 +754,11 @@ a {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px 35px;
     }
+
+    .footer-bottom {
+        gap: 8px 20px;
+        flex-wrap: wrap;
+    }
 }
 
 /* ================= MOBILE ================= */
@@ -766,11 +774,11 @@ a {
     }
 
     .hero {
-        height: 510px;
+        height: 500px;
     }
 
     .hero-content {
-        padding-top: 120px;
+        padding-top: 126px;
     }
 
     .hero h1 {
@@ -804,12 +812,12 @@ a {
     }
 
     .about-visual {
-        height: 245px;
+        height: 250px;
         padding-left: 42px;
     }
 
     .about-main-img {
-        height: 196px;
+        height: 200px;
     }
 
     .quote-card {
@@ -850,7 +858,8 @@ a {
     }
 
     .filters {
-        gap: 2px;
+        gap: 3px;
+        flex-wrap: wrap;
     }
 
     .filter {
@@ -869,13 +878,18 @@ a {
 
     .footer-bottom {
         font-size: 6px;
+        line-height: 1.5;
     }
 
     .footer-bottom span:last-child {
-        white-space: nowrap;
+        white-space: normal;
     }
 
     .booking-form {
         padding: 15px 12px;
+    }
+
+    .form-grid {
+        gap: 9px 8px;
     }
 }
