@@ -94,8 +94,31 @@
       <div class="container reservation-grid">
         <div class="reservation-copy"><p class="eyebrow light">RESERVATION</p><h2>Book Your Table<br>Today</h2><p>Great food is always better when shared. Reserve your table and join us for an unforgettable dining experience.</p></div>
         <form class="booking-form" id="booking-form" novalidate>
-          <div class="form-grid"><label>Full Name<input type="text" name="name" placeholder="Enter your name" required></label><label>Email Address<input type="email" name="email" placeholder="Enter your email" required></label><label>Date<input type="date" name="date" required></label><label>Time<input type="time" name="time" required></label><label class="full-field">Number of Guests<select name="guests" required><option value="">Select guests</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option></select></label></div>
-          <button class="form-submit" type="submit">Reserve a Table</button><p class="form-message" aria-live="polite"></p>
+          <div class="form-grid">
+            <label>Full Name
+              <input type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
+            </label>
+            <label>Email Address
+              <input type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+            </label>
+            <label>Date
+              <input type="date" name="date" required>
+            </label>
+            <label>Time
+              <input type="time" name="time" required>
+            </label>
+            <label class="full-field">Number of Guests
+              <select name="guests" required>
+                <option value="">Select guests</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5+ Guests</option>
+              </select>
+            </label>
+          </div>
+          <button class="form-submit" type="submit">Reserve a Table</button>
+          <p class="form-message" aria-live="polite"></p>
         </form>
       </div>
     </section>
